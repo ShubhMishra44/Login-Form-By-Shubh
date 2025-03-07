@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #c6c3c3;
+  --second-color: #ffffff;
+  --black-color: #000000;
+}
+
+body {
+  background-image: url("data:image/jpeg;base64,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");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login_box {
+  position: relative;
+  width: 450px;
+  backdrop-filter: blur(25px);
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 7.5em 2.5em 4em 2.5em;
+  color: var(--second-color);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  width: 140px;
+  height: 70px;
+  border-radius: 0 0 20px 20px;
+}
+
+.login-header span {
+  font-size: 30px;
+  color: var(--black-color);
+}
+
+.login-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 30px;
+  height: 30px;
+  border-top-right-radius: 50%;
+  background: transparent;
+  box-shadow: 15px 0 0 0 var(--primary-color);
+}
+
+.login-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 30px;
+  height: 30px;
+  border-top-left-radius: 50%;
+  background: transparent;
+  box-shadow: -15px 0 0 0 var(--primary-color); /* Removed space before --primary-color */
+}
+
+.input_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.input-field {
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  background: transparent;
+  color: var(--second-color);
+  padding-inline: 20px 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 30px;
+  outline: none;
+}
+
+#user {
+  margin-bottom: 10px;
+}
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  transition: 0.2s;
+}
+
+.input-field:focus ~ .label,
+.input-field:valid .label {
+  /* Added missing closing brace here */
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  color: var(--black-color);
+  padding: 0 10px;
+} /* Closed the missing brace */
+
+.icon {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 20px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.input-submit {
+  width: 100%;
+  height: 50px;
+  background: #ececec;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-submit:hover {
+  background: var(--second-color);
+}
+
+.register {
+  text-align: center;
+}
+
+.register a {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 564px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  .login_box {
+    padding: 7.5em 1.5em 4em 1.5em;
+  }
+}
